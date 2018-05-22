@@ -23,4 +23,3 @@ for i in delitele:
 print("pocet delitelov: ", pocetDelitelov)
 print("delitele: ", delitele)
 print("max. prvociselny delitel: ", max_delitel)
-input("koniec")
