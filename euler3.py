@@ -7,6 +7,28 @@ What is the largest prime factor of the number 600851475143 ?
 
 '''
 
+
+class KriMath:
+    '''
+    pokec
+    '''
+
+    def __init__(self, number):
+        self.number = number
+
+    def factor(self):
+        factors = []
+        for i in range(1, int(self.number ** (1 / 2)) + 1):
+            if self.number % i == 0:
+                factors.append(i)
+        return factors
+
+    def factorCount(self):
+        count = len(self.factor())
+        return count
+
+
+'''
 cislo = 600851475143
 pocetDelitelov = 0
 delitele = []
@@ -23,5 +45,4 @@ for i in delitele:
 print("pocet delitelov: ", pocetDelitelov)
 print("delitele: ", delitele)
 print("max. prvociselny delitel: ", max_delitel)
-
-# skuska
+'''
